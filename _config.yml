@@ -1,0 +1,32 @@
+title: "Deep Learning Notes"
+description: "A personal documentation hub for deep learning."
+theme: jekyll-theme-chirpy
+
+baseurl: "" # keep empty if using username.github.io/Deep-Learning
+url: "https://sanjanb.github.io"
+
+lang: en
+timezone: Asia/Kolkata
+
+# Author
+author:
+  name: "Sanjan Acharya"
+  url: "https://github.com/sanjanb"
+
+# Collections
+collections:
+  notes:
+    output: true
+  code:
+    output: true
+  projects:
+    output: true
+  resources:
+    output: true
+  about:
+    output: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
