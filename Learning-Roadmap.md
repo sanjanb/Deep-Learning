@@ -3,7 +3,7 @@
 This repository documents a structured step-by-step journey to master **neural networks, deep learning, and large language models (LLMs)**.  
 The roadmap combines theory, practical coding, projects, and reflection. Each stage includes resources, learning outcomes, and mini-projects to reinforce concepts.
 
----
+
 
 ## Progress Tracking
 
@@ -16,7 +16,7 @@ The roadmap combines theory, practical coding, projects, and reflection. Each st
 - [ ] Step 7: MLOps and Deployment  
 - [ ] Step 8: Specializations (Computer Vision, NLP, RL)
 
----
+
 
 ## Step 1: Mathematical Foundations
 
@@ -38,7 +38,6 @@ The roadmap combines theory, practical coding, projects, and reflection. Each st
 - Why are eigenvalues and eigenvectors important for understanding neural networks?  
 - What role do derivatives play in optimization?
 
----
 
 ## Step 2: Introduction to Neural Networks
 
@@ -55,7 +54,7 @@ The roadmap combines theory, practical coding, projects, and reflection. Each st
 - Why does a neural network need non-linear activation functions?  
 - What is the difference between shallow and deep networks?
 
----
+
 
 ## Step 3: Building Neural Networks and Transformers
 
@@ -75,7 +74,6 @@ The roadmap combines theory, practical coding, projects, and reflection. Each st
 - How does self-attention differ from convolutional operations?  
 - Why is scaling important for training deep networks?
 
----
 
 ## Step 4: Practical Applications of LLMs
 
@@ -94,7 +92,7 @@ The roadmap combines theory, practical coding, projects, and reflection. Each st
 - What are the trade-offs between fine-tuning, prompt engineering, and retrieval-augmented generation (RAG)?  
 - How do LLMs handle context length limitations?
 
----
+
 
 ## Step 5: Hands-On Practice and Competitions
 
@@ -112,7 +110,6 @@ The roadmap combines theory, practical coding, projects, and reflection. Each st
 - How do feature engineering and data preprocessing affect model performance?  
 - Why is cross-validation essential in competitions?
 
----
 
 ## Step 6: Advanced Deep Learning Courses
 
@@ -132,7 +129,6 @@ The roadmap combines theory, practical coding, projects, and reflection. Each st
 - How do CNNs exploit spatial hierarchies in data?  
 - Why does transfer learning improve training efficiency?
 
----
 
 ## Step 7: MLOps and Deployment
 
@@ -150,7 +146,6 @@ The roadmap combines theory, practical coding, projects, and reflection. Each st
 - What are the challenges of scaling ML systems in production?  
 - How can monitoring prevent model drift?
 
----
 
 ## Step 8: Specializations
 
@@ -170,7 +165,6 @@ The roadmap combines theory, practical coding, projects, and reflection. Each st
 - Fine-tune a large language model with parameter-efficient methods (LoRA).  
 - Implement PPO or DQN in OpenAI Gym.
 
----
 
 ## Notes and Reflections
 
