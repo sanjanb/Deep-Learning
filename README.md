@@ -1,6 +1,6 @@
 # Deep-Learning
 [Click here ->](https://course.fast.ai/Lessons/lesson1.html) Best to practice
-To gain deep, practical knowledge from the "Neural Networks / Deep Learning" StatQuest playlist, follow a structured approach that combines active learning, coding, and note-taking at each step.[1][2]
+To gain deep, practical knowledge from the "Neural Networks / Deep Learning", follow a structured approach that combines active learning, coding, and note-taking at each step.[1][2]
 
 ### Watch and Actively Learn
 
