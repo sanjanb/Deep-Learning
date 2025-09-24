@@ -188,5 +188,3 @@ By completing this roadmap, the following outcomes should be achieved:
 - At least 3 blog posts explaining core concepts.  
 - One deployed LLM application.  
 - A personal cheatsheet of formulas, concepts, and reusable code snippets.
-
----
