@@ -62,4 +62,3 @@
 * **Comparing to PyTorch [[02:06:50](http://www.youtube.com/watch?v=VMj-3S1tku0&t=7610)]**: Contrasting the simplicity of `micrograd` with the complexity of production libraries like PyTorch.
 * **Locating Real Autograd Code [[02:22:00](http://www.youtube.com/watch?v=VMj-3S1tku0&t=8520)]**: A brief tour attempting to find the actual backpropagation implementation inside the PyTorch source code to show its complexity in a production environment.
 
-http://googleusercontent.com/youtube_content/0
