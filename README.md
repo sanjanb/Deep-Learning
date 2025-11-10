@@ -2,6 +2,10 @@
 [Click here -> and watch this playlist more often](https://www.youtube.com/playlist?list=PLgPbN3w-ia_PeT1_c5jiLW3RJdR7853b9)
 
 [Click here ->](https://www.geeksforgeeks.org/blogs/deep-learning-roadmap/) Best to practice
+
+[Click here -> This is where the magic of building kicks in](https://www.youtube.com/playlist?list=PLgPbN3w-ia_PeT1_c5jiLW3RJdR7853b9)
+
+
 To gain deep, practical knowledge from the "Neural Networks / Deep Learning", follow a structured approach that combines active learning, coding, and note-taking at each step.[1][2]
 
 ### Watch and Actively Learn
