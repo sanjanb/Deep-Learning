@@ -1,48 +1,74 @@
 # LLM Fine-Tuning Crash Course Documentation
 
-This repository contains comprehensive notes, theoretical explanations, and code implementation details from the [LLM Fine-Tuning Crash Course](https://www.youtube.com/watch?v=IIvORO248Zs) by Codebasics.
+This repository serves as a technical knowledge base for Large Language Model (LLM) fine-tuning. It follows the curriculum of the [LLM Fine-Tuning Crash Course](https://www.youtube.com/watch?v=IIvORO248Zs) by Codebasics, documenting the transition from foundational models to domain-specific, reasoning-capable agents.
 
-## 📌 Overview
-This course covers the transition from general LLMs to domain-specific models using Parameter-Efficient Fine-Tuning (PEFT) techniques like LoRA and QLoRA, concluding with a hands-on implementation using the Unsloth library.
+## Overview
 
-## 📖 Table of Contents
-1. [Introduction to Fine-Tuning & RAG](#part-1-introduction)
-2. [LoRA: Low-Rank Adaptation](#part-2-lora)
-3. [Quantization & QLoRA](#part-3-qlora)
-4. [Practical Implementation with Unsloth](#part-4-unsloth-implementation)
+The documentation covers the transition from general-purpose LLMs to specialized models using modern Parameter-Efficient Fine-Tuning (PEFT) techniques. Key focus areas include the mathematical mechanics of LoRA, memory optimization via QLoRA, and high-speed implementation using the Unsloth library.
 
----
+## Table of Contents
 
-## 📂 Video Sub-Parts & Documentation
-
-### [Part 1: Introduction to Fine-Tuning & RAG](./docs/01_theory_and_rag_vs_finetuning.md)
-* **Timestamp:** [00:00:00]
-* **Topics:** Transfer Learning, RAG vs. Fine-Tuning, and when to use each.
-* **Key Concept:** Fine-tuning is used for tone, format, and empathy, while RAG is best for external knowledge retrieval.
-
-### [Part 2: LoRA Technical Deep Dive](./docs/02_lora_technical_deep_dive.md)
-* **Timestamp:** [00:06:52]
-* **Topics:** Parameter Efficient Fine-Tuning (PEFT), Rank (R), and Matrix Decomposition.
-* **Key Concept:** Decomposing weight updates into smaller matrices (A and B) to reduce trainable parameters.
-
-### [Part 3: Quantization & QLoRA](./docs/03_quantization_and_qlora.md)
-* **Timestamp:** [00:13:14]
-* **Topics:** Bits/Bytes, NF4 Quantization, and Double Quantization.
-* **Key Concept:** Reducing model memory footprint (e.g., from 280GB to 32.5GB) to run large models on consumer GPUs.
-
-### [Part 4: Hands-on Fine-Tuning with Unsloth](./docs/04_unsloth_hands_on_tutorial.md)
-* **Timestamp:** [00:34:41]
-* **Topics:** Google Colab setup, Llama 3.2, SFT Trainer, and Reasoning (DeepSeek-style).
-* **Key Concept:** Using the Unsloth library to fine-tune a model to think step-by-step using the ServiceNow R1 dataset.
+1. [Theory: Transfer Learning, RAG, and Fine-Tuning](https://www.google.com/search?q=%23part-1-conceptual-foundations)
+2. [PEFT: Parameter-Efficient Fine-Tuning Overview](https://www.google.com/search?q=%23part-2-peft-specialization)
+3. [LoRA: Low-Rank Adaptation Mechanics](https://www.google.com/search?q=%23part-3-lora-deep-dive)
+4. [Optimization: Quantization and QLoRA](https://www.google.com/search?q=%23part-4-quantization-and-qlora)
+5. [Implementation: Unsloth Hands-on Tutorial](https://www.google.com/search?q=%23part-5-hands-on-implementation)
 
 ---
 
-## 🛠️ Requirements
-- Python 3.10+
-- NVIDIA GPU (T4 or higher recommended)
-- Libraries: `unsloth`, `torch`, `transformers`, `trl`
+## Documentation Modules
 
-## 💡 Suggestions for this Repo
-- **Interactive Notebooks:** Include a `.ipynb` file in the root directory for users to run the Unsloth code directly in Google Colab.
-- **Cheat Sheet:** Add a `CHEATSHEET.md` summarizing hyperparameters like `rank`, `alpha`, and `learning_rate`.
-- **Glossary:** A list of terms like "Frozen Layers," "Adapters," and "Paging" would be very helpful for beginners.
+### [Part 1: Theory, RAG, and Fine-Tuning](https://www.google.com/search?q=./docs/01_theory_and_rag_vs_finetuning.md)
+
+* **Timestamp:**
+* **Core Focus:** The decision framework for choosing between Retrieval-Augmented Generation (RAG) and Fine-Tuning based on knowledge versus behavioral requirements.
+* **Key Concept:** RAG acts as an "Open Book" for facts; Fine-tuning acts as "Internalized Behavior" for tone and logic.
+
+### [Part 1b: PEFT Overview](https://www.google.com/search?q=./docs/01b_parameter_efficient_fine_tuning.md)
+
+* **Core Focus:** Addressing the computational "VRAM Wall" by freezing base model weights and training only small adapter modules.
+* **Key Concept:** Reducing trainable parameters by over 90% to enable training on consumer-grade hardware.
+
+### [Part 2: LoRA Technical Deep Dive](https://www.google.com/search?q=./docs/02_lora_technical_deep_dive.md)
+
+* **Timestamp:**
+* **Core Focus:** The mathematical decomposition of weight updates into low-rank matrices (A and B).
+* **Key Concept:** Utilizing the Low-Intrinsic Dimension hypothesis to modify model behavior without inference latency.
+
+### [Part 3: Quantization and QLoRA](https://www.google.com/search?q=./docs/03_quantization_and_qlora.md)
+
+* **Timestamp:**
+* **Core Focus:** Memory reduction techniques including NormalFloat 4 (NF4), Double Quantization, and Paged Optimizers.
+* **Key Concept:** Compressing model weights from 16-bit to 4-bit to fit 70B+ parameter models on single enterprise GPUs.
+
+### [Part 4: Unsloth Hands-on Tutorial](https://www.google.com/search?q=./docs/04_unsloth_hands_on_tutorial.md)
+
+* **Timestamp:**
+* **Core Focus:** End-to-end implementation using the Unsloth framework to fine-tune Llama 3.2 on the ServiceNow R1 dataset for reasoning.
+* **Key Concept:** Applying Chain-of-Thought (CoT) datasets to enable models to perform "Thinking" steps before responding.
+
+---
+
+## Technical Requirements
+
+* **Operating System:** Linux or Windows (via WSL2).
+* **Environment:** Python 3.10+, CUDA 12.1+ recommended.
+* **Hardware:** NVIDIA GPU with minimum 8GB VRAM (Tesla T4, RTX 30/40 series).
+* **Primary Libraries:** * `unsloth` for optimized training.
+* `peft` for adapter management.
+* `bitsandbytes` for 4-bit/8-bit quantization.
+* `trl` for Supervised Fine-Tuning (SFT).
+
+
+
+## Repository Recommendations
+
+* **Code Implementation:** It is recommended to maintain a `notebooks/` directory containing the `.ipynb` export of the Unsloth training script for use in Google Colab.
+* **Hyperparameter Reference:** Create a `CONFIG.md` file to track experimental results across different Ranks (), Alpha values, and Learning Rates.
+* **Dataset Schema:** Document the JSON/Parquet schema required for the SFT Trainer to ensure compatibility with custom data.
+
+---
+
+**Course Credits:** [Codebasics YouTube Channel](https://www.google.com/search?q=https://www.youtube.com/%40codebasics)
+
+**Original Video:** [LLM Fine Tuning Crash Course](https://www.youtube.com/watch?v=IIvORO248Zs)
