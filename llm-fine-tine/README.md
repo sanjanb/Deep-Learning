@@ -18,7 +18,7 @@ The documentation covers the transition from general-purpose LLMs to specialized
 
 ## Documentation Modules
 
-### [Part 1: Theory, RAG, and Fine-Tuning](/01_theory_and_rag_vs_finetuning.md)
+### [Part 1: Theory, RAG, and Fine-Tuning](/llm-fine-tine/01_theory_and_rag_vs_finetuning.md)
 
 * **Timestamp:**
 * **Core Focus:** The decision framework for choosing between Retrieval-Augmented Generation (RAG) and Fine-Tuning based on knowledge versus behavioral requirements.
