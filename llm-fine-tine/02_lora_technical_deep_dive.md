@@ -1,12 +1,5 @@
 # Part 2: LoRA (Low-Rank Adaptation) Technical Deep Dive
 
-## Timestamp Reference
-- **Start:** [00:06:52]
-- **Matrix Decomposition:** [00:09:50]
-- **Hyperparameter Guidelines:** [00:11:48]
-
----
-
 ## The Problem: Computational Constraints
 Full fine-tuning requires updating every parameter in a model. For a 70-billion parameter model, this necessitates massive VRAM and computational power. Parameter-Efficient Fine-Tuning (PEFT) addresses this by significantly reducing the number of trainable weights.
 
