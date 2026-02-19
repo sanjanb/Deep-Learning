@@ -8,7 +8,7 @@ The documentation covers the transition from general-purpose LLMs to specialized
 
 ## Table of Contents
 
-1. [Theory: Transfer Learning, RAG, and Fine-Tuning](#Part 1: Theory, RAG, and Fine-Tuning)
+1. [Theory: Transfer Learning, RAG, and Fine-Tuning](#/llm-fine-tine/01_theory_and_rag_vs_finetuning.md)
 2. [PEFT: Parameter-Efficient Fine-Tuning Overview](#part-2-peft-specialization)
 3. [LoRA: Low-Rank Adaptation Mechanics](#part-3-lora-deep-dive)
 4. [Optimization: Quantization and QLoRA](#part-4-quantization-and-qlora)
