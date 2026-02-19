@@ -8,11 +8,11 @@ The documentation covers the transition from general-purpose LLMs to specialized
 
 ## Table of Contents
 
-1. [Theory: Transfer Learning, RAG, and Fine-Tuning](https://www.google.com/search?q=%23part-1-conceptual-foundations)
-2. [PEFT: Parameter-Efficient Fine-Tuning Overview](https://www.google.com/search?q=%23part-2-peft-specialization)
-3. [LoRA: Low-Rank Adaptation Mechanics](https://www.google.com/search?q=%23part-3-lora-deep-dive)
-4. [Optimization: Quantization and QLoRA](https://www.google.com/search?q=%23part-4-quantization-and-qlora)
-5. [Implementation: Unsloth Hands-on Tutorial](https://www.google.com/search?q=%23part-5-hands-on-implementation)
+1. [Theory: Transfer Learning, RAG, and Fine-Tuning](#part-1-conceptual-foundations)
+2. [PEFT: Parameter-Efficient Fine-Tuning Overview](#part-2-peft-specialization)
+3. [LoRA: Low-Rank Adaptation Mechanics](#part-3-lora-deep-dive)
+4. [Optimization: Quantization and QLoRA](#part-4-quantization-and-qlora)
+5. [Implementation: Unsloth Hands-on Tutorial](#part-5-hands-on-implementation)
 
 ---
 
